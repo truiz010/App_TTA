@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Appetc</string>
+    <string name="nombre">NOMBRE</string>
+    <string name="nombreUsuario">Introduce tu nombre</string>
+    <string name="dni">DNI</string>
+    <string name="dniUsuario">Introduce tu DNI</string>
+    <string name="edad">EDAD</string>
+    <string name="edadUsuario">Introduce tu edad</string>
+</resources>
