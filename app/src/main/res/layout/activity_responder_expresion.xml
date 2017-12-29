@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorfondo"
+    android:orientation="vertical"
+    tools:context="es.ehu.tta.appetc.presentacion.ResponderExpresionActivity">
+
+    <TextView
+        android:id="@+id/menu_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+
+        <TextView
+            android:text="@string/expresionEusk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/expresionEusk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/nuevaEusk"/>
+
+    </GridLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="START AUDIO RECORD"
+        android:onClick="startAudioRecord"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STOP AUDIO RECORD"
+        android:onClick="stopAudioRecord"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESPONDER A UNA EXPRESION"
+        android:onClick="completarExpresion"/>
+</LinearLayout>

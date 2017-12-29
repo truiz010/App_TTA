@@ -9,14 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".presentacion.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegistroActivity"></activity>
+        <activity android:name=".presentacion.RegistroActivity" />
+        <activity android:name=".presentacion.SesionActivity" />
+        <activity android:name=".presentacion.MenuPrincipalActivity" />
+        <activity android:name=".presentacion.MenuActivity" />
+        <activity android:name=".presentacion.ExpresionesCompradorActivity" />
+        <activity android:name=".presentacion.ExpresionesVendedorActivity" />
+        <activity android:name=".presentacion.EstadoExpresionActivity" />
+        <activity android:name=".presentacion.NuevaExpresionActivity" />
+        <activity android:name=".presentacion.ExpresionesVaciasActivity" />
+        <activity android:name=".presentacion.ResponderExpresionActivity" />
+        <activity android:name=".presentacion.MenuPalabrasActivity"></activity>
     </application>
 
 </manifest>
