@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/colorfondo"
+    tools:context="es.ehu.tta.appetc.presentacion.ParejasPescaderiaActivity">
+
+    <TextView
+        android:id="@+id/menu_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/titulo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="BIKOTEAK LOTU"
+        android:layout_below="@+id/menu_login"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/boton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/titulo2"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:onClick="boton12"
+        android:text="MIHI ARRAINA" />
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/titulo2"
+        android:layout_width="150dp"
+        android:scaleType="fitStart"
+        android:id="@+id/button_topright"
+        android:background="@drawable/colorfondo"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:src="@drawable/itsaszapoa"
+        android:onClick="imagen12" />
+
+    <Button
+        android:id="@+id/boton22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/boton2"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="50dp"
+        android:onClick="boton22"
+        android:text="LUBIA" />
+
+    <ImageButton
+        android:id="@+id/button_topright1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_topright"
+        android:layout_alignStart="@+id/button_topright"
+        android:layout_alignTop="@+id/boton22"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/colorfondo"
+        android:onClick="imagen22"
+        android:scaleType="fitStart"
+        android:src="@drawable/mihiarraina" />
+
+    <Button
+        android:id="@+id/boton32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/boton22"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="50dp"
+        android:onClick="boton32"
+        android:text="LEGATZA" />
+
+    <ImageButton
+        android:id="@+id/button_topright22"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_topright"
+        android:layout_alignStart="@+id/button_topright"
+        android:layout_alignTop="@+id/boton32"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/colorfondo"
+        android:onClick="imagen32"
+        android:scaleType="fitStart"
+        android:src="@drawable/legatza" />
+
+    <Button
+        android:id="@+id/boton42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/boton32"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="50dp"
+        android:onClick="boton42"
+        android:text="ITSAS ZAPOA" />
+
+    <ImageButton
+        android:id="@+id/button_topright32"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_topright"
+        android:layout_alignStart="@+id/button_topright"
+        android:layout_alignTop="@+id/boton42"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/colorfondo"
+        android:onClick="imagen42"
+        android:scaleType="fitStart"
+        android:src="@drawable/lubia" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/boton42"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="25dp"
+        android:onClick="correguir2"
+        android:text="ZUZUENDU"
+        android:id="@+id/button2" />
+
+</RelativeLayout>

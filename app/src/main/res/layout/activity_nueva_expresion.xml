@@ -12,8 +12,17 @@
         android:id="@+id/menu_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:textColor="@android:color/black"
         android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/menu_login"
+        android:text="Preguntar nueva expresion"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"/>
 
     <GridLayout
         android:layout_width="match_parent"
@@ -22,7 +31,7 @@
 
 
         <TextView
-            android:text="@string/expresionCast"
+            android:text="EXPRESION EN CASTELLANO"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -30,10 +39,10 @@
             android:id="@+id/expresionCast"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/nuevaCast"/>
+            android:hint="nueva expresion"/>
 
         <TextView
-            android:text="@string/TipoUsuario"
+            android:text="TIPO DE USUARIO"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -41,7 +50,7 @@
             android:id="@+id/tipoUsuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/tipo"/>
+            android:hint="¿Vendedor o comprador?"/>
     </GridLayout>
 
     <Button
@@ -49,4 +58,5 @@
         android:layout_height="wrap_content"
         android:text="PREGUNTAR NUEVA EXPRESION"
         android:onClick="añadirExpresion"/>
+
 </LinearLayout>

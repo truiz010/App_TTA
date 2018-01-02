@@ -33,4 +33,6 @@
     <string name="pescaderia">PERCADERIA</string>
     <string name="frutasVerduras">FRUTAS Y VERDURAS</string>
     <string name="productos">TODOS LOS PRODUCTOS: DICCIONARIO</string>
+    <string name="letra">LETRA</string>
+    <string name="letraUsuario">Introudce una letra</string>
 </resources>

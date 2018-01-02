@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/colorfondo"
+    tools:context="es.ehu.tta.appetc.presentacion.OcaVerduleriaActivity">
+
+    <TextView
+        android:id="@+id/menu_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/enunciado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Aukeratu fruta eta barazki dendan egon daitekeen produktuak dituzten ahateak"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:columnCount="3">
+
+        <ImageView
+            android:id="@+id/pato13"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/pato" />
+
+        <ImageView
+            android:id="@+id/pato23"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/pato" />
+
+        <ImageView
+            android:id="@+id/pato33"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/pato" />
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:columnCount="3">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="PIKUA"
+            android:textColor="@android:color/black"
+            android:onClick="pato13"/>
+
+        <Button
+            android:layout_width="115dp"
+            android:layout_height="50dp"
+            android:text="ESNEA"
+            android:textColor="@android:color/black"
+            android:onClick="pato23"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="PIPERRA"
+            android:textColor="@android:color/black"
+            android:onClick="pato33"/>
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/correcto3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/fallo3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"/>
+
+</LinearLayout>

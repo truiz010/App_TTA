@@ -12,7 +12,7 @@
         android:id="@+id/menu_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:textColor="@android:color/black"
         android:textSize="20dp"/>
 
     <GridLayout
@@ -22,7 +22,7 @@
 
 
         <TextView
-            android:text="@string/expresionEusk"
+            android:text="ESAERA EUSKARAZ"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -30,7 +30,7 @@
             android:id="@+id/expresionEusk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/nuevaEusk"/>
+            android:hint="Introduce la expresion en euskera"/>
 
     </GridLayout>
 
@@ -51,4 +51,5 @@
         android:layout_height="wrap_content"
         android:text="RESPONDER A UNA EXPRESION"
         android:onClick="completarExpresion"/>
+
 </LinearLayout>

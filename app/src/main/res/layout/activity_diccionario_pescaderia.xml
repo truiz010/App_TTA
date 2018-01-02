@@ -1,0 +1,1110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/colorfondo"
+    tools:context="es.ehu.tta.appetc.presentacion.DiccionarioPescaderiaActivity">
+
+    <TextView
+        android:id="@+id/menu_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Productos de la pescaderia"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:columnCount="5"
+                android:rowCount="27">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:text="IRUDIA"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="AUDIOA GAZTELANIAZ"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:text="PRODUKTUA GAZTELANIAZ"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="AUDIOA EUSKARAZ"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="PRODUKTUA EUSKARAZ"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:srcCompat="@drawable/bakaiaoa"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa gaztelaniaz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Bacalao"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa euskaraz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Bakailaoa"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:srcCompat="@drawable/barbarina"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa gaztelaniaz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Salmonete"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa euskaraz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Barbarina"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:srcCompat="@drawable/berdela"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa gaztelaniaz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Berdel"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa euskaraz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Berdela"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:srcCompat="@drawable/bisigua"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa gaztelaniaz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Besugo"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa euskaraz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Bisigua"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:srcCompat="@drawable/bokarta"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa gaztelaniaz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Anchoa"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa euskaraz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Bokarta"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:srcCompat="@drawable/erreboilo"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa gaztelaniaz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Rodaballo"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa euskaraz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Erreboilo"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:srcCompat="@drawable/erromez"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa gaztelaniaz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Vieira"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa euskaraz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Erromez-mazkorra"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:srcCompat="@drawable/ezpata"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa gaztelaniaz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Pez espada"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa euskaraz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Ezpata arraina"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:srcCompat="@drawable/hegaluzea"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa gaztelaniaz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Bonito"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa euskaraz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Hegaluzea"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:srcCompat="@drawable/itsasain"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Audioa gaztelaniaz"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Congrio"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@android:color/black"/>
+
+                <!--  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa euskaraz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Itsas aingira"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                 <ImageView
+                      android:layout_width="70dp"
+                      android:layout_height="70dp"
+                      app:srcCompat="@drawable/itsaszapoa"/>
+
+                  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa gaztelaniaz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Rape"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa euskaraz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Itsas zapoa"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <ImageView
+                      android:layout_width="70dp"
+                      android:layout_height="70dp"
+                      app:srcCompat="@drawable/izokina"/>
+
+                  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa gaztelaniaz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Salmon"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="50dp"
+                      android:layout_marginLeft="50dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa euskaraz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Izokina"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <ImageView
+                      android:layout_width="70dp"
+                      android:layout_height="70dp"
+                      app:srcCompat="@drawable/legatza"/>
+
+                  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa gaztelaniaz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Merluza"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="50dp"
+                      android:layout_marginLeft="50dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa euskaraz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Legatza"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <ImageView
+                      android:layout_width="70dp"
+                      android:layout_height="70dp"
+                      app:srcCompat="@drawable/lubia"/>
+
+                  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa gaztelaniaz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Lubina"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="50dp"
+                      android:layout_marginLeft="50dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa euskaraz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Lupia"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                   <ImageView
+                       android:layout_width="70dp"
+                       android:layout_height="70dp"
+                       app:srcCompat="@drawable/magurioa"/>
+
+                  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa gaztelaniaz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Bigaro"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="50dp"
+                      android:layout_marginLeft="50dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa euskaraz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Magurioa"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+
+                  <ImageView
+                         android:layout_width="70dp"
+                         android:layout_height="70dp"
+                         app:srcCompat="@drawable/marrazoa"/>
+
+                  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa gaztelaniaz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Tiburon"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="50dp"
+                      android:layout_marginLeft="50dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa euskaraz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Marrazoa"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                   <ImageView
+                       android:layout_width="70dp"
+                       android:layout_height="70dp"
+                       app:srcCompat="@drawable/mihiarraina"/>
+
+                  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa gaztelaniaz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Lenguado"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="50dp"
+                      android:layout_marginLeft="50dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa euskaraz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Mihi arrain"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                   <ImageView
+                       android:layout_width="70dp"
+                       android:layout_height="70dp"
+                       app:srcCompat="@drawable/muskuilua"/>
+
+                  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa gaztelaniaz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Mejillon"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="50dp"
+                      android:layout_marginLeft="50dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa euskaraz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Muskuilua"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <ImageView
+                       android:layout_width="70dp"
+                       android:layout_height="70dp"
+                       app:srcCompat="@drawable/olagarroa"/>
+
+                  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa gaztelaniaz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Pulpo"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="50dp"
+                      android:layout_marginLeft="50dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:text="Audioa euskaraz"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="40dp"
+                      android:text="Olagarroa"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginStart="40dp"
+                      android:layout_marginLeft="40dp"
+                      android:textColor="@android:color/black"/>
+
+                   <ImageView
+                       android:layout_width="70dp"
+                       android:layout_height="70dp"
+                       app:srcCompat="@drawable/txibia"/>
+
+                   <TextView
+                       android:layout_width="200dp"
+                       android:layout_height="40dp"
+                       android:text="Audioa gaztelaniaz"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@android:color/black"/>
+
+                   <TextView
+                       android:layout_width="100dp"
+                       android:layout_height="40dp"
+                       android:text="Calamar"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="50dp"
+                       android:layout_marginLeft="50dp"
+                       android:textColor="@android:color/black"/>
+
+                   <TextView
+                       android:layout_width="200dp"
+                       android:layout_height="40dp"
+                       android:text="Audioa euskaraz"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@android:color/black"/>
+
+                   <TextView
+                       android:layout_width="100dp"
+                       android:layout_height="40dp"
+                       android:text="Txibia"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@android:color/black"/>
+
+                   <ImageView
+                       android:layout_width="70dp"
+                       android:layout_height="70dp"
+                       app:srcCompat="@drawable/txirla"/>
+
+                   <TextView
+                       android:layout_width="200dp"
+                       android:layout_height="40dp"
+                       android:text="Audioa gaztelaniaz"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@android:color/black"/>
+
+                   <TextView
+                       android:layout_width="100dp"
+                       android:layout_height="40dp"
+                       android:text="Chirla"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="50dp"
+                       android:layout_marginLeft="50dp"
+                       android:textColor="@android:color/black"/>
+
+                   <TextView
+                       android:layout_width="200dp"
+                       android:layout_height="40dp"
+                       android:text="Audioa euskaraz"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@android:color/black"/>
+
+                   <TextView
+                       android:layout_width="100dp"
+                       android:layout_height="40dp"
+                       android:text="Txirla"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@android:color/black"/>
+
+                   <ImageView
+                       android:layout_width="70dp"
+                       android:layout_height="70dp"
+                       app:srcCompat="@drawable/txitxarroa"/>
+
+                   <TextView
+                       android:layout_width="200dp"
+                       android:layout_height="40dp"
+                       android:text="Audioa gaztelaniaz"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@android:color/black"/>
+
+                   <TextView
+                       android:layout_width="100dp"
+                       android:layout_height="40dp"
+                       android:text="Chicharro"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="50dp"
+                       android:layout_marginLeft="50dp"
+                       android:textColor="@android:color/black"/>
+
+                   <TextView
+                       android:layout_width="200dp"
+                       android:layout_height="40dp"
+                       android:text="Audioa euskaraz"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@android:color/black"/>
+
+                   <TextView
+                       android:layout_width="100dp"
+                       android:layout_height="40dp"
+                       android:text="Txitxarroa"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@android:color/black"/>
+
+                   <ImageView
+                       android:layout_width="70dp"
+                       android:layout_height="70dp"
+                       app:srcCompat="@drawable/txokoa"/>
+
+                   <TextView
+                       android:layout_width="200dp"
+                       android:layout_height="40dp"
+                       android:text="Audioa gaztelaniaz"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@android:color/black"/>
+
+                   <TextView
+                       android:layout_width="100dp"
+                       android:layout_height="40dp"
+                       android:text="Sepia"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="50dp"
+                       android:layout_marginLeft="50dp"
+                       android:textColor="@android:color/black"/>
+
+                   <TextView
+                       android:layout_width="200dp"
+                       android:layout_height="40dp"
+                       android:text="Audioa euskaraz"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@android:color/black"/>
+
+                   <TextView
+                       android:layout_width="100dp"
+                       android:layout_height="40dp"
+                       android:text="Txokoa"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@android:color/black"/>
+
+                   <ImageView
+                       android:layout_width="70dp"
+                       android:layout_height="70dp"
+                       app:srcCompat="@drawable/urraburu"/>
+
+                   <TextView
+                       android:layout_width="200dp"
+                       android:layout_height="40dp"
+                       android:text="Audioa gaztelaniaz"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@android:color/black"/>
+
+                   <TextView
+                       android:layout_width="100dp"
+                       android:layout_height="40dp"
+                       android:text="Dorada"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="50dp"
+                       android:layout_marginLeft="50dp"
+                       android:textColor="@android:color/black"/>
+
+                   <TextView
+                       android:layout_width="200dp"
+                       android:layout_height="40dp"
+                       android:text="Audioa euskaraz"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@android:color/black"/>
+
+                   <TextView
+                       android:layout_width="100dp"
+                       android:layout_height="40dp"
+                       android:text="Urraburu"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@android:color/black"/>
+
+                   <ImageView
+                       android:layout_width="70dp"
+                       android:layout_height="70dp"
+                       app:srcCompat="@drawable/zamo"/>
+
+                   <TextView
+                       android:layout_width="200dp"
+                       android:layout_height="40dp"
+                       android:text="Audioa gaztelaniaz"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@android:color/black"/>
+
+                   <TextView
+                       android:layout_width="100dp"
+                       android:layout_height="40dp"
+                       android:text="Carpa"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="50dp"
+                       android:layout_marginLeft="50dp"
+                       android:textColor="@android:color/black"/>
+
+                   <TextView
+                       android:layout_width="200dp"
+                       android:layout_height="40dp"
+                       android:text="Audioa euskaraz"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@android:color/black"/>
+
+                   <TextView
+                       android:layout_width="100dp"
+                       android:layout_height="40dp"
+                       android:text="Zamo arrunta"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@android:color/black"/>-->
+            </GridLayout>
+
+        </ScrollView>
+    </HorizontalScrollView>
+
+</LinearLayout>

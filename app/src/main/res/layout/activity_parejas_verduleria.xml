@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/colorfondo"
+    tools:context="es.ehu.tta.appetc.presentacion.ParejasVerduleriaActivity">
+
+    <TextView
+        android:id="@+id/menu_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/titulo3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="BIKOTEAK LOTU"
+        android:layout_below="@+id/menu_login"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/boton31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/titulo3"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:onClick="boton13"
+        android:text="MELOIA" />
+
+    <ImageButton
+        android:id="@+id/button_topright"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/titulo3"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/colorfondo"
+        android:onClick="imagen13"
+        android:scaleType="fitStart"
+        android:src="@drawable/azenarioa" />
+
+    <Button
+        android:id="@+id/boton32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/boton31"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="50dp"
+        android:onClick="boton23"
+        android:text="AZENARIOA" />
+
+    <ImageButton
+        android:id="@+id/button_topright1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_topright"
+        android:layout_alignStart="@+id/button_topright"
+        android:layout_below="@+id/boton31"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/colorfondo"
+        android:onClick="imagen23"
+        android:scaleType="fitStart"
+        android:src="@drawable/gerezia" />
+
+    <Button
+        android:id="@+id/boton33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/boton32"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="50dp"
+        android:onClick="boton33"
+        android:text="KIPULA" />
+
+    <ImageButton
+        android:id="@+id/button_topright2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_topright"
+        android:layout_alignStart="@+id/button_topright"
+        android:layout_alignTop="@+id/boton33"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/colorfondo"
+        android:onClick="imagen33"
+        android:scaleType="fitStart"
+        android:src="@drawable/kipula" />
+
+    <Button
+        android:id="@+id/boton34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/boton33"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="50dp"
+        android:onClick="boton43"
+        android:text="GEREZIA" />
+
+    <ImageButton
+        android:id="@+id/button_topright3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_topright"
+        android:layout_alignStart="@+id/button_topright"
+        android:layout_alignTop="@+id/boton34"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/colorfondo"
+        android:onClick="imagen43"
+        android:scaleType="fitStart"
+        android:src="@drawable/meloia" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/boton34"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="25dp"
+        android:onClick="correguir3"
+        android:text="ZUZUENDU"
+        android:id="@+id/button" />
+
+</RelativeLayout>

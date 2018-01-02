@@ -9,24 +9,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".presentacion.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".presentacion.RegistroActivity" />
         <activity android:name=".presentacion.SesionActivity" />
         <activity android:name=".presentacion.MenuPrincipalActivity" />
         <activity android:name=".presentacion.MenuActivity" />
-        <activity android:name=".presentacion.ExpresionesCompradorActivity" />
-        <activity android:name=".presentacion.ExpresionesVendedorActivity" />
-        <activity android:name=".presentacion.EstadoExpresionActivity" />
         <activity android:name=".presentacion.NuevaExpresionActivity" />
         <activity android:name=".presentacion.ExpresionesVaciasActivity" />
         <activity android:name=".presentacion.ResponderExpresionActivity" />
-        <activity android:name=".presentacion.MenuPalabrasActivity"></activity>
+        <activity android:name=".presentacion.MenuPalabrasActivity" />
+        <activity android:name=".presentacion.Ahorcado1Activity" />
+        <activity android:name=".presentacion.MainActivity" />
+        <activity android:name=".presentacion.ExpresionesActivity" />
+        <activity android:name=".presentacion.EstadoExpresionesActivity" />
+        <activity android:name=".presentacion.PalabrasActivity" />
+        <activity android:name=".presentacion.CarniceriaActivity" />
+        <activity android:name=".presentacion.PescaderiaActivity" />
+        <activity android:name=".presentacion.VerduleriaActivity" />
+        <activity android:name=".presentacion.TodosProductosActivity" />
+        <activity android:name=".presentacion.AhorcadoCarniceriaActivity" />
+        <activity android:name=".presentacion.AhorcadoPescaderiaActivity" />
+        <activity android:name=".presentacion.AhorcadoVerduleriaActivity" />
+        <activity android:name=".presentacion.ParejasCarniceriaActivity" />
+        <activity android:name=".presentacion.ParejasPescaderiaActivity" />
+        <activity android:name=".presentacion.ParejasVerduleriaActivity" />
+        <activity android:name=".presentacion.PalabraCorrectaCarniceriaActivity" />
+        <activity android:name=".presentacion.PalabraCorrectaPescaderiaActivity" />
+        <activity android:name=".presentacion.PalabraCorrectaVerduleriaActivity" />
+        <activity android:name=".presentacion.OcaCarniceriaActivity" />
+        <activity android:name=".presentacion.OcaPescaderiaActivity" />
+        <activity android:name=".presentacion.OcaVerduleriaActivity" />
+        <activity android:name=".presentacion.DiccionarioCarniceriaActivity" />
+        <activity android:name=".presentacion.DiccionarioPescaderiaActivity" />
+        <activity android:name=".presentacion.DiccionarioVerduleriaActivity"></activity>
     </application>
 
 </manifest>
