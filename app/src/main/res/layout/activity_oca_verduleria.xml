@@ -32,21 +32,18 @@
         android:columnCount="3">
 
         <ImageView
-            android:id="@+id/pato13"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="20dp"
             app:srcCompat="@drawable/pato" />
 
         <ImageView
-            android:id="@+id/pato23"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="20dp"
             app:srcCompat="@drawable/pato" />
 
         <ImageView
-            android:id="@+id/pato33"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="20dp"
@@ -61,13 +58,15 @@
         android:columnCount="3">
 
         <Button
+            android:id="@+id/pato13"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:text="PIKUA"
+            android:text="TXERRIA"
             android:textColor="@android:color/black"
             android:onClick="pato13"/>
 
         <Button
+            android:id="@+id/pato23"
             android:layout_width="115dp"
             android:layout_height="50dp"
             android:text="ESNEA"
@@ -75,9 +74,10 @@
             android:onClick="pato23"/>
 
         <Button
+            android:id="@+id/pato33"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:text="PIPERRA"
+            android:text="PIKUA"
             android:textColor="@android:color/black"
             android:onClick="pato33"/>
     </GridLayout>
