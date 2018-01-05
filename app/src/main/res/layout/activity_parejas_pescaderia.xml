@@ -38,8 +38,8 @@
         android:onClick="boton12"
         android:text="MIHI ARRAINA" />
 
-    <ImageButton
-        android:layout_height="wrap_content"
+    <ImageView
+        android:layout_height="100dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/titulo2"
@@ -47,11 +47,12 @@
         android:scaleType="fitStart"
         android:id="@+id/button_topright"
         android:background="@drawable/colorfondo"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="13dp"
         android:layout_marginEnd="33dp"
         android:layout_marginRight="33dp"
+        android:padding="5dp"
         android:src="@drawable/itsaszapoa"
-        android:onClick="imagen12" />
+        android:onClick="pulsarImagen12" />
 
     <Button
         android:id="@+id/boton22"
@@ -64,18 +65,19 @@
         android:layout_marginRight="33dp"
         android:layout_marginTop="50dp"
         android:onClick="boton22"
-        android:text="LUBIA" />
+        android:text="LUPIA" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/button_topright1"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_alignLeft="@+id/button_topright"
         android:layout_alignStart="@+id/button_topright"
         android:layout_alignTop="@+id/boton22"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="13dp"
         android:background="@drawable/colorfondo"
-        android:onClick="imagen22"
+        android:onClick="pulsarImagen22"
+        android:padding="5dp"
         android:scaleType="fitStart"
         android:src="@drawable/mihiarraina" />
 
@@ -92,16 +94,17 @@
         android:onClick="boton32"
         android:text="LEGATZA" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/button_topright22"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_alignLeft="@+id/button_topright"
         android:layout_alignStart="@+id/button_topright"
         android:layout_alignTop="@+id/boton32"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="13dp"
         android:background="@drawable/colorfondo"
-        android:onClick="imagen32"
+        android:onClick="pulsarImagen32"
+        android:padding="5dp"
         android:scaleType="fitStart"
         android:src="@drawable/legatza" />
 
@@ -118,17 +121,18 @@
         android:onClick="boton42"
         android:text="ITSAS ZAPOA" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/button_topright32"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_height="75dp"
         android:layout_alignLeft="@+id/button_topright"
         android:layout_alignStart="@+id/button_topright"
         android:layout_alignTop="@+id/boton42"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="13dp"
         android:background="@drawable/colorfondo"
-        android:onClick="imagen42"
+        android:onClick="pulsarImagen42"
         android:scaleType="fitStart"
+        android:padding="5dp"
         android:src="@drawable/lubia" />
 
     <Button

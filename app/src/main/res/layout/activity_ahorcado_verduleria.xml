@@ -38,52 +38,170 @@
         android:columnCount="8">
 
         <TextView
+            android:id="@+id/gion13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-" />
 
         <TextView
+            android:id="@+id/gion23"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-" />
 
         <TextView
+            android:id="@+id/gion33"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-" />
 
         <TextView
+            android:id="@+id/gion43"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-" />
 
         <TextView
+            android:id="@+id/gion53"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-" />
 
         <TextView
+            android:id="@+id/gion63"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-" />
 
         <TextView
+            android:id="@+id/gion73"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-" />
 
         <TextView
+            android:id="@+id/gion83"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-"/>
 
     </GridLayout>
 
+    <ImageView
+        android:id="@+id/imagenError"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gridLayout"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/ahorkatua1"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imagenError1"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gridLayout"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/ahorkatua2"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imagenError2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gridLayout"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/ahorkatua3"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imagenError3"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gridLayout"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/ahorkatua4"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imagenError4"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gridLayout"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/ahorkatua5"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imagenError5"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gridLayout"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/ahorkatua6"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imagenError6"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gridLayout"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/ahorkatua7"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imagenError7"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gridLayout"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/ahorkatua8"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imagenError8"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gridLayout"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/ahorkatua9"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imagenError9"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gridLayout"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/ahorkatua10"
+        android:visibility="invisible"/>
+
     <GridLayout
         android:id="@+id/gridLayout22"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/gridLayout"
+        android:layout_below="@id/imagenError"
         android:layout_marginTop="50dp"
         android:columnCount="2">
 
@@ -102,17 +220,23 @@
 
     <Button
         android:id="@+id/boton2"
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="KONPROBATU"
-        android:layout_below="@id/gridLayout22"
-        android:onClick="comprobar"/>
+        android:layout_above="@+id/gridLayout22"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:onClick="comprobar"
+        android:text="KONPROBATU" />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="PISTA"
-        android:layout_below="@id/boton2"
-        android:onClick="ayuda"/>
+        android:layout_alignLeft="@+id/boton2"
+        android:layout_alignStart="@+id/boton2"
+        android:layout_below="@+id/boton2"
+        android:onClick="ayuda"
+        android:text="PISTA" />
 
 </RelativeLayout>

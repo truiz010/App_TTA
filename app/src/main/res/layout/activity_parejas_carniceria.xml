@@ -37,22 +37,20 @@
         android:layout_marginEnd="33dp"
         android:layout_marginRight="33dp"
         android:onClick="boton1"
-        android:text="ODOLOSTEA" />
+        android:text="GIBELA" />
 
-    <ImageButton
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/titulo"
+    <ImageView
+        android:id="@+id/imagen1"
         android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_alignLeft="@+id/imagen2"
+        android:layout_alignStart="@+id/imagen2"
+        android:layout_below="@+id/titulo"
+        android:layout_marginTop="13dp"
+        android:onClick="pulsarImagen1"
+        android:padding="5dp"
         android:scaleType="fitStart"
-        android:id="@+id/button_topright"
-        android:background="@drawable/colorfondo"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="33dp"
-        android:layout_marginRight="33dp"
-        android:src="@drawable/bildotsa"
-        android:onClick="imagen1" />
+        android:src="@drawable/bildotsa" />
 
     <Button
         android:id="@+id/boton2"
@@ -67,17 +65,21 @@
         android:onClick="boton2"
         android:text="BILDOTSA" />
 
-    <ImageButton
-        android:id="@+id/button_topright1"
+    <ImageView
+        android:id="@+id/imagen2"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button_topright"
-        android:layout_alignStart="@+id/button_topright"
-        android:layout_alignTop="@+id/boton2"
-        android:background="@drawable/colorfondo"
-        android:onClick="imagen2"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imagen1"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="13dp"
+        android:onClick="pulsarImagen2"
+        android:padding="5dp"
         android:scaleType="fitStart"
         android:src="@drawable/hirugihar" />
+
 
     <Button
         android:id="@+id/boton3"
@@ -92,40 +94,39 @@
         android:onClick="boton3"
         android:text="TXISTORRA" />
 
-    <ImageButton
-        android:id="@+id/button_topright2"
+    <ImageView
+        android:id="@+id/imagen3"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button_topright"
-        android:layout_alignStart="@+id/button_topright"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/imagen1"
+        android:layout_alignStart="@+id/imagen1"
         android:layout_alignTop="@+id/boton3"
-        android:layout_marginTop="17dp"
-        android:background="@drawable/colorfondo"
-        android:onClick="imagen3"
+        android:layout_marginTop="13dp"
+        android:onClick="pulsarImagen3"
+        android:padding="5dp"
         android:scaleType="fitStart"
-        android:src="@drawable/odolostea" />
+        android:src="@drawable/gibela" />
 
     <Button
         android:id="@+id/boton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/boton3"
+        android:layout_alignRight="@+id/boton3"
         android:layout_below="@+id/boton3"
         android:layout_marginTop="50dp"
         android:onClick="boton4"
         android:text="HIRUGIHAR" />
 
-    <ImageButton
-        android:id="@+id/button_topright3"
+    <ImageView
+        android:id="@+id/imagen4"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button_topright"
-        android:layout_alignStart="@+id/button_topright"
-        android:layout_alignTop="@+id/boton4"
-        android:layout_marginTop="34dp"
-        android:background="@drawable/colorfondo"
-        android:onClick="imagen4"
+        android:layout_height="90dp"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignLeft="@+id/imagen3"
+        android:layout_alignStart="@+id/imagen3"
+        android:onClick="pulsarImagen4"
+        android:padding="5dp"
         android:scaleType="fitStart"
         android:src="@drawable/txistorra" />
 
@@ -138,6 +139,6 @@
         android:layout_marginRight="33dp"
         android:layout_marginTop="25dp"
         android:onClick="correguir"
-        android:text="ZUZENDU" />
-
+        android:text="ZUZENDU"
+        android:id="@+id/button3" />
 </RelativeLayout>
