@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/colorfondo"
+    android:id="@+id/diccionarioPescaderia"
     tools:context="es.ehu.tta.appetc.presentacion.DiccionarioPescaderiaActivity">
 
     <TextView
@@ -83,13 +84,15 @@
                     android:layout_height="70dp"
                     app:srcCompat="@drawable/bakaiaoa"/>
 
-                <TextView
-                    android:layout_width="200dp"
+                <Button
+                    android:id="@+id/boton1castP"
+                    android:layout_width="150dp"
                     android:layout_height="40dp"
-                    android:text="Audioa gaztelaniaz"
+                    android:text="ESCUCHAR"
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="40dp"
                     android:layout_marginLeft="40dp"
+                    android:onClick="reproducir"
                     android:textColor="@android:color/black"/>
 
                 <TextView
@@ -101,13 +104,15 @@
                     android:layout_marginLeft="50dp"
                     android:textColor="@android:color/black"/>
 
-                <TextView
-                    android:layout_width="200dp"
+                <Button
+                    android:id="@+id/boton1euskP"
+                    android:layout_width="150dp"
                     android:layout_height="40dp"
-                    android:text="Audioa euskaraz"
+                    android:text="ENTZUN"
                     android:layout_marginTop="20dp"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="reproducir"
                     android:textColor="@android:color/black"/>
 
                 <TextView
@@ -124,13 +129,15 @@
                     android:layout_height="70dp"
                     app:srcCompat="@drawable/barbarina"/>
 
-                <TextView
-                    android:layout_width="200dp"
+                <Button
+                    android:id="@+id/boton2castP"
+                    android:layout_width="150dp"
                     android:layout_height="40dp"
-                    android:text="Audioa gaztelaniaz"
+                    android:text="ESCUCHAR"
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="40dp"
                     android:layout_marginLeft="40dp"
+                    android:onClick="reproducir"
                     android:textColor="@android:color/black"/>
 
                 <TextView
@@ -142,13 +149,15 @@
                     android:layout_marginLeft="50dp"
                     android:textColor="@android:color/black"/>
 
-                <TextView
-                    android:layout_width="200dp"
+                <Button
+                    android:id="@+id/boton2euskP"
+                    android:layout_width="150dp"
                     android:layout_height="40dp"
-                    android:text="Audioa euskaraz"
+                    android:text="ENTZUN"
                     android:layout_marginTop="20dp"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="reproducir"
                     android:textColor="@android:color/black"/>
 
                 <TextView
@@ -164,13 +173,15 @@
                     android:layout_height="70dp"
                     app:srcCompat="@drawable/berdela"/>
 
-                <TextView
-                    android:layout_width="200dp"
+                <Button
+                    android:id="@+id/boton3castP"
+                    android:layout_width="150dp"
                     android:layout_height="40dp"
-                    android:text="Audioa gaztelaniaz"
+                    android:text="ESCUCHAR"
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="40dp"
                     android:layout_marginLeft="40dp"
+                    android:onClick="reproducir"
                     android:textColor="@android:color/black"/>
 
                 <TextView
@@ -182,13 +193,15 @@
                     android:layout_marginLeft="50dp"
                     android:textColor="@android:color/black"/>
 
-                <TextView
-                    android:layout_width="200dp"
+                <Button
+                    android:id="@+id/boton3euskP"
+                    android:layout_width="150dp"
                     android:layout_height="40dp"
-                    android:text="Audioa euskaraz"
+                    android:text="ENTZUN"
                     android:layout_marginTop="20dp"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="reproducir"
                     android:textColor="@android:color/black"/>
 
                 <TextView
@@ -205,13 +218,15 @@
                     android:layout_height="70dp"
                     app:srcCompat="@drawable/bisigua"/>
 
-                <TextView
-                    android:layout_width="200dp"
+                <Button
+                    android:id="@+id/boton4castP"
+                    android:layout_width="150dp"
                     android:layout_height="40dp"
-                    android:text="Audioa gaztelaniaz"
+                    android:text="ESCUCHAR"
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="40dp"
                     android:layout_marginLeft="40dp"
+                    android:onClick="reproducir"
                     android:textColor="@android:color/black"/>
 
                 <TextView
@@ -223,13 +238,15 @@
                     android:layout_marginLeft="50dp"
                     android:textColor="@android:color/black"/>
 
-                <TextView
-                    android:layout_width="200dp"
+                <Button
+                    android:id="@+id/boton4euskP"
+                    android:layout_width="150dp"
                     android:layout_height="40dp"
-                    android:text="Audioa euskaraz"
+                    android:text="ENTZUN"
                     android:layout_marginTop="20dp"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="reproducir"
                     android:textColor="@android:color/black"/>
 
                 <TextView
@@ -246,13 +263,15 @@
                     android:layout_height="70dp"
                     app:srcCompat="@drawable/bokarta"/>
 
-                <TextView
-                    android:layout_width="200dp"
+                <Button
+                    android:id="@+id/boton5castP"
+                    android:layout_width="150dp"
                     android:layout_height="40dp"
-                    android:text="Audioa gaztelaniaz"
+                    android:text="ESCUCHAR"
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="40dp"
                     android:layout_marginLeft="40dp"
+                    android:onClick="reproducir"
                     android:textColor="@android:color/black"/>
 
                 <TextView
@@ -264,13 +283,15 @@
                     android:layout_marginLeft="50dp"
                     android:textColor="@android:color/black"/>
 
-                <TextView
-                    android:layout_width="200dp"
+                <Button
+                    android:id="@+id/boton5euskP"
+                    android:layout_width="150dp"
                     android:layout_height="40dp"
-                    android:text="Audioa euskaraz"
+                    android:text="ENTZUN"
                     android:layout_marginTop="20dp"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="reproducir"
                     android:textColor="@android:color/black"/>
 
                 <TextView
@@ -287,13 +308,15 @@
                     android:layout_height="70dp"
                     app:srcCompat="@drawable/erreboilo"/>
 
-                <TextView
-                    android:layout_width="200dp"
+                <Button
+                    android:id="@+id/boton6castP"
+                    android:layout_width="150dp"
                     android:layout_height="40dp"
-                    android:text="Audioa gaztelaniaz"
+                    android:text="ESCUCHAR"
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="40dp"
                     android:layout_marginLeft="40dp"
+                    android:onClick="reproducir"
                     android:textColor="@android:color/black"/>
 
                 <TextView
@@ -305,13 +328,15 @@
                     android:layout_marginLeft="50dp"
                     android:textColor="@android:color/black"/>
 
-                <TextView
-                    android:layout_width="200dp"
+                <Button
+                    android:id="@+id/boton6euskP"
+                    android:layout_width="150dp"
                     android:layout_height="40dp"
-                    android:text="Audioa euskaraz"
+                    android:text="ENTZUN"
                     android:layout_marginTop="20dp"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="reproducir"
                     android:textColor="@android:color/black"/>
 
                 <TextView
@@ -328,13 +353,15 @@
                     android:layout_height="70dp"
                     app:srcCompat="@drawable/erromez"/>
 
-                <TextView
-                    android:layout_width="200dp"
+                <Button
+                    android:id="@+id/boton7castP"
+                    android:layout_width="150dp"
                     android:layout_height="40dp"
-                    android:text="Audioa gaztelaniaz"
+                    android:text="ESCUCHAR"
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="40dp"
                     android:layout_marginLeft="40dp"
+                    android:onClick="reproducir"
                     android:textColor="@android:color/black"/>
 
                 <TextView
@@ -346,13 +373,15 @@
                     android:layout_marginLeft="50dp"
                     android:textColor="@android:color/black"/>
 
-                <TextView
-                    android:layout_width="200dp"
+                <Button
+                    android:id="@+id/boton7euskP"
+                    android:layout_width="150dp"
                     android:layout_height="40dp"
-                    android:text="Audioa euskaraz"
+                    android:text="ENTZUN"
                     android:layout_marginTop="20dp"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="reproducir"
                     android:textColor="@android:color/black"/>
 
                 <TextView
@@ -369,13 +398,15 @@
                     android:layout_height="70dp"
                     app:srcCompat="@drawable/ezpata"/>
 
-                <TextView
-                    android:layout_width="200dp"
+                <Button
+                    android:id="@+id/boton8castP"
+                    android:layout_width="150dp"
                     android:layout_height="40dp"
-                    android:text="Audioa gaztelaniaz"
+                    android:text="ESCUCHAR"
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="40dp"
                     android:layout_marginLeft="40dp"
+                    android:onClick="reproducir"
                     android:textColor="@android:color/black"/>
 
                 <TextView
@@ -387,13 +418,15 @@
                     android:layout_marginLeft="50dp"
                     android:textColor="@android:color/black"/>
 
-                <TextView
-                    android:layout_width="200dp"
+                <Button
+                    android:id="@+id/boton8euskP"
+                    android:layout_width="150dp"
                     android:layout_height="40dp"
-                    android:text="Audioa euskaraz"
+                    android:text="ENTZUN"
                     android:layout_marginTop="20dp"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="reproducir"
                     android:textColor="@android:color/black"/>
 
                 <TextView
@@ -410,13 +443,15 @@
                     android:layout_height="70dp"
                     app:srcCompat="@drawable/hegaluzea"/>
 
-                <TextView
-                    android:layout_width="200dp"
+                <Button
+                    android:id="@+id/boton9castP"
+                    android:layout_width="150dp"
                     android:layout_height="40dp"
-                    android:text="Audioa gaztelaniaz"
+                    android:text="ESCUCHAR"
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="40dp"
                     android:layout_marginLeft="40dp"
+                    android:onClick="reproducir"
                     android:textColor="@android:color/black"/>
 
                 <TextView
@@ -428,13 +463,15 @@
                     android:layout_marginLeft="50dp"
                     android:textColor="@android:color/black"/>
 
-                <TextView
+                <Button
+                    android:id="@+id/boton9euskP"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
-                    android:text="Audioa euskaraz"
+                    android:text="ENTZUN"
                     android:layout_marginTop="20dp"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="reproducir"
                     android:textColor="@android:color/black"/>
 
                 <TextView
@@ -446,7 +483,7 @@
                     android:layout_marginLeft="40dp"
                     android:textColor="@android:color/black"/>
 
-                <ImageView
+                <!--<ImageView
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     app:srcCompat="@drawable/itsasain"/>
@@ -469,7 +506,7 @@
                     android:layout_marginLeft="50dp"
                     android:textColor="@android:color/black"/>
 
-                <!--  <TextView
+                <TextView
                       android:layout_width="200dp"
                       android:layout_height="40dp"
                       android:text="Audioa euskaraz"

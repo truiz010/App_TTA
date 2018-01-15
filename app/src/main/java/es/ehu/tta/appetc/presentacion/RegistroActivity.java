@@ -1,15 +1,26 @@
 package es.ehu.tta.appetc.presentacion;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.io.File;
+import java.io.IOException;
+
 import es.ehu.tta.appetc.R;
 
 public class RegistroActivity extends AppCompatActivity {
+
+    private Uri pictureUri;
+    final int PICTURE_REQUEST_CODE=1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +53,44 @@ public class RegistroActivity extends AppCompatActivity {
             ).show();
         startActivity(intent);
 
+    }
+
+    public void takePhoto(View view){
+
+        if(!getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA)){
+            Toast.makeText(this,"El dispositivo no tiene camara",Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Intent intent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            if(intent.resolveActivity(getPackageManager())!=null){
+                File dir= Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
+                try{
+                    File file=File.createTempFile("login",".jpg",dir);
+                    pictureUri= Uri.fromFile(file);
+                    intent.putExtra(MediaStore.EXTRA_OUTPUT,pictureUri);
+                    startActivityForResult(intent,PICTURE_REQUEST_CODE);
+                }
+                catch (IOException e){
+
+                }
+            }
+            else{
+                Toast.makeText(this,"No hay ningun programa para sacer fotos",Toast.LENGTH_SHORT).show();;
+            }
+        }
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        if(resultCode!= Activity.RESULT_OK){
+            return;
+        }
+        switch (requestCode){
+            case PICTURE_REQUEST_CODE:
+                // dumpImageMetaData(pictureUri);
+                break;
+        }
     }
 
 
