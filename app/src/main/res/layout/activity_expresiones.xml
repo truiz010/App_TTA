@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/colorfondo"
     android:orientation="vertical"
-    tools:context="es.ehu.tta.appetc.presentacion.ExpresionesActivity">
+    tools:context="es.ehu.tta.appetc.presentacion.presentacion.ExpresionesActivity">
 
     <TextView
         android:id="@+id/menu_login"
@@ -39,5 +39,44 @@
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
         android:textSize="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tableExpresiones"
+                android:layout_marginTop="20dp"
+                android:stretchColumns="1"
+                android:gravity="center">
+                <TableRow>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="GAZTELERAZ"
+                        android:textSize="10dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="EUSKARAZ"
+                        android:textSize="10dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="AUDIOA"
+                        android:textSize="10dp"
+                        android:gravity="center"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/colorfondo"
-    tools:context="es.ehu.tta.appetc.presentacion.ParejasPescaderiaActivity">
+    tools:context="es.ehu.tta.appetc.presentacion.presentacion.ParejasPescaderiaActivity">
 
     <TextView
         android:id="@+id/menu_login"

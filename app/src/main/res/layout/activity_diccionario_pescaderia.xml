@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@drawable/colorfondo"
     android:id="@+id/diccionarioPescaderia"
-    tools:context="es.ehu.tta.appetc.presentacion.DiccionarioPescaderiaActivity">
+    tools:context="es.ehu.tta.appetc.presentacion.presentacion.DiccionarioPescaderiaActivity">
 
     <TextView
         android:id="@+id/menu_login"

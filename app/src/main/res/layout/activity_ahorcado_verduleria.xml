@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/colorfondo"
-    tools:context="es.ehu.tta.appetc.presentacion.AhorcadoVerduleriaActivity">
+    tools:context="es.ehu.tta.appetc.presentacion.presentacion.AhorcadoVerduleriaActivity">
 
     <TextView
         android:id="@+id/menu_login"

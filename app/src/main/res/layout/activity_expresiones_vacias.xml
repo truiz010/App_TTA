@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/colorfondo"
     android:orientation="vertical"
-    tools:context="es.ehu.tta.appetc.presentacion.ExpresionesVaciasActivity">
+    tools:context="es.ehu.tta.appetc.presentacion.presentacion.ExpresionesVaciasActivity">
 
     <TextView
         android:id="@+id/menu_login"
@@ -24,10 +24,41 @@
         android:textSize="20dp"
         android:textColor="@android:color/black"/>
 
-    <Button
+    <!--<Button
         android:id="@+id/botonExpresion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="responderExpresion"/>
+        android:onClick="responderExpresion"/>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/botonExpresiones"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="150dp"
+                        android:text="GAZTELERAZ"
+                        android:textSize="10dp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
