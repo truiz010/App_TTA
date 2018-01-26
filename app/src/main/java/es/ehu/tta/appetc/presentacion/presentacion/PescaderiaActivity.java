@@ -26,26 +26,31 @@ public class PescaderiaActivity extends AppCompatActivity {
 
     public void ahorcado(View view){
         Intent intent=new Intent(this,AhorcadoPescaderiaActivity.class);
+        intent.putExtra(SesionActivity.EXTRA_LOGIN,login);
         startActivity(intent);
     }
 
     public void parejas(View view){
         Intent intent=new Intent(this,ParejasPescaderiaActivity.class);
+        intent.putExtra(SesionActivity.EXTRA_LOGIN,login);
         startActivity(intent);
     }
 
     public void palabraCorrecta(View view){
         Intent intent=new Intent(this,PalabraCorrectaPescaderiaActivity.class);
+        intent.putExtra(SesionActivity.EXTRA_LOGIN,login);
         startActivity(intent);
     }
 
     public void oca(View view){
         Intent intent=new Intent(this,OcaPescaderiaActivity.class);
+        intent.putExtra(SesionActivity.EXTRA_LOGIN,login);
         startActivity(intent);
     }
 
     public void diccionarioPescaderia(View view){
         Intent intent=new Intent(this,DiccionarioPescaderiaActivity.class);
+        intent.putExtra(SesionActivity.EXTRA_LOGIN,login);
         startActivity(intent);
     }
 

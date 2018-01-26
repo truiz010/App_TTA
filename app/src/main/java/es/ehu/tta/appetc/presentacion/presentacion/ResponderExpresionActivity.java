@@ -15,6 +15,7 @@ import es.ehu.tta.appetc.R;
 
 public class ResponderExpresionActivity extends AppCompatActivity {
 
+    String login;
     final int AUDIO_REQUEST_CODE = 2;
     final int READ_REQUEST_CODE = 1;
 
@@ -24,6 +25,7 @@ public class ResponderExpresionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_responder_expresion);
 
         Intent intent = getIntent();
+        login=intent.getStringExtra(SesionActivity.EXTRA_LOGIN);
         TextView textLogin = (TextView) findViewById(R.id.menu_login);
         textLogin.setText("Login: " + intent.getStringExtra(SesionActivity.EXTRA_LOGIN));
     }

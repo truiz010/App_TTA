@@ -104,6 +104,7 @@ public class ExpresionesVaciasActivity extends AppCompatActivity {
 
     public void responderExpresion(View view){
         Intent intent=new Intent(this,ResponderExpresionActivity.class);
+        intent.putExtra(SesionActivity.EXTRA_LOGIN,login);
         startActivity(intent);
     }
 
