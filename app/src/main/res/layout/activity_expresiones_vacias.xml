@@ -33,31 +33,11 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TableLayout
-                android:id="@+id/botonExpresiones"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:stretchColumns="1">
-
-                <TableRow>
-
-                    <TextView
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:layout_marginLeft="150dp"
-                        android:text="GAZTELERAZ"
-                        android:textSize="10dp" />
-                </TableRow>
-            </TableLayout>
+            android:orientation="vertical"
+            android:id="@+id/llBotonera" >
         </LinearLayout>
     </ScrollView>
 

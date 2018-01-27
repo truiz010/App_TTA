@@ -11,16 +11,16 @@ import java.util.List;
 public class Expresion {
 
     String login;
-    List<Esaldia> esaldiak=new ArrayList<>();
+    List<Esaldiak> esaldia=new ArrayList<>();
     String respuesta;
 
     public Expresion(){
 
     }
 
-    public Expresion(String login, List<Esaldia> esaldiak, String respuesta){
+    public Expresion(String login, List<Esaldiak> esaldia, String respuesta){
         this.login=login;
-        this.esaldiak=esaldiak;
+        this.esaldia=esaldia;
         this.respuesta=respuesta;
     }
 
@@ -33,12 +33,12 @@ public class Expresion {
         this.login = login;
     }
 
-    public List<Esaldia> getEsaldiak() {
-        return esaldiak;
+    public List<Esaldiak> getEsaldia() {
+        return esaldia;
     }
 
-    public void setEsaldiak(List<Esaldia> esaldiak) {
-        this.esaldiak = esaldiak;
+    public void setEsaldia(List<Esaldiak> esaldia) {
+        this.esaldia = esaldia;
     }
 
     public String getRespuesta() {
@@ -49,18 +49,18 @@ public class Expresion {
         this.respuesta = respuesta;
     }
 
-    public static class Esaldia implements Serializable{
+    public static class Esaldiak implements Serializable{
         String esaldiaCast;
         String esaldiaEusk;
         String audioFitxIzena;
         String erabiltzaileMota;
         int idEsaldiak;
 
-        public Esaldia(){
+        public Esaldiak(){
 
         }
 
-        public Esaldia(String esaldiaCast, String esaldiaEusk, String audioFitxIzena, String erabiltzaileMota, int idEsaldiak){
+        public Esaldiak(String esaldiaCast, String esaldiaEusk, String audioFitxIzena, String erabiltzaileMota, int idEsaldiak){
             this.esaldiaCast=esaldiaCast;
             this.esaldiaEusk=esaldiaEusk;
             this.audioFitxIzena=audioFitxIzena;

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/colorfondo"
     android:orientation="vertical"
+    android:id="@+id/mostrarExpresion"
     tools:context="es.ehu.tta.appetc.presentacion.presentacion.ExpresionesActivity">
 
     <TextView

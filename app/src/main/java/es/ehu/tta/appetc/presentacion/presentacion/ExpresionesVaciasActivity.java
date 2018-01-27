@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -49,20 +51,22 @@ public class ExpresionesVaciasActivity extends AppCompatActivity {
             @Override
             protected Expresion work()throws IOException {
                 try{
+                    Expresion expresion=new Expresion();
                     JSONObject json=rest.getJSON(String.format("requestForoa?login=%s",login));
 
-                    Expresion expresion=new Expresion();
                     expresion.setLogin(json.getString("login"));
                     JSONArray array=json.getJSONArray("esaldiak");
 
                     for(int i=0;i<array.length();i++){
                         JSONObject item=array.getJSONObject(i);
-                        Expresion.Esaldia exp=new Expresion.Esaldia();
+                        Expresion.Esaldiak exp=new Expresion.Esaldiak();
                         exp.setEsaldiaCast(item.getString("esaldiaCast"));
                         exp.setEsaldiaEusk(item.getString("esaldiaEusk"));
                         exp.setAudioFitxIzena(item.getString("audioFitxIzena"));
                         exp.setErabiltzaileMota(item.getString("erabiltzaileMota"));
-                        exp.setIdEsaldiak(item.getInt("idEsaldiak"));
+                        exp.setIdEsaldiak(item.getInt("idEsaldia"));
+
+                        expresion.getEsaldia().add(exp);
                     }
                     return expresion;
                 }
@@ -75,28 +79,32 @@ public class ExpresionesVaciasActivity extends AppCompatActivity {
             protected void onFinish(Expresion result){
                 Toast.makeText(getApplicationContext(),"Pagina de expresiones",Toast.LENGTH_SHORT).show();
 
-                String[] esaldiaCast=new String[result.getEsaldiak().size()];
-                //String[] esaldiaEusk= new String[0];
-                //String[] audioFitxIzena=new String[0];
+                for(int i=0; i<result.getEsaldia().size();i++){
+                    LinearLayout ll=findViewById(R.id.llBotonera);
+                    Button boton=new Button(getApplicationContext());
+                    boton.setText(result.getEsaldia().get(i).getEsaldiaCast());
+                    boton.setGravity(Gravity.CENTER);
+                    ll.addView(boton);
+                }
 
 
-                for(int i=0; i<result.getEsaldiak().size();i++){
+              /*  for(int i=0; i<result.getEsaldia().size();i++){
                     TableLayout tl =findViewById(R.id.botonExpresiones);
 
                     TableRow tr = new TableRow(getApplicationContext());
                     tr.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.FILL_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
 
                     TextView gaztelaniaz = new TextView(getApplicationContext());
-                    gaztelaniaz.setText(result.getEsaldiak().get(i).getEsaldiaCast());
+                    gaztelaniaz.setText(result.getEsaldia().get(i).getEsaldiaCast());
                     gaztelaniaz.setGravity(Gravity.CENTER);
+                    gaztelaniaz.setTextColor(Color.BLACK);
                     gaztelaniaz.setTextSize(10);
 
                     tr.addView(gaztelaniaz);
 
                     tl.addView(tr, new TableLayout.LayoutParams(TableLayout.LayoutParams.FILL_PARENT, TableLayout.LayoutParams.WRAP_CONTENT));
 
-                }
-
+                }*/
             }
         }.execute();
 
