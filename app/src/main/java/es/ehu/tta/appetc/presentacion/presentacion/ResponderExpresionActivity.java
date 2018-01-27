@@ -42,6 +42,7 @@ public class ResponderExpresionActivity extends AppCompatActivity {
     String esaeraCast;
     String erabiltzaileMota;
     String fileName;
+    String nombre;
     String path;
     String respuesta;
     private final static String TAG="tag";
@@ -123,6 +124,46 @@ public class ResponderExpresionActivity extends AppCompatActivity {
         intent.addCategory(Intent.CATEGORY_OPENABLE);
         intent.setType("*/*");
         startActivityForResult(intent, READ_REQUEST_CODE);
+
+        if(resultado==200) {
+            fileName="esaera"+idEsaldiak;
+            new ProgressTask<Expresion>(this) {
+                @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+                @Override
+                protected Expresion work() throws IOException, JSONException {
+                    try {
+                        final String esaera = ((EditText) findViewById(R.id.expresionEusk)).getText().toString();
+                        JSONObject json = new JSONObject();
+                        json.put("login", login);
+                        json.put("audioFitxIZena", fileName);
+                        json.put("esaldiaEusk", esaera);
+                        id = Integer.parseInt(idEsaldiak);
+                        json.put("idEsaldia", id);
+                        json.put("erabiltzaileMota", erabiltzaileMota);
+
+                        respuesta = rest.postJSON(json, String.format("responseEsaldia"));
+                        Expresion exp = new Expresion();
+                        exp.setRespuesta(respuesta);
+                        return exp;
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    return null;
+                }
+
+                @Override
+                protected void onFinish(Expresion result) {
+
+                    if (result.getRespuesta().matches("ESALDIA OSATUTA")) {
+                        Toast.makeText(getApplicationContext(), "Expresión completada", Toast.LENGTH_LONG).show();
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Error al completar la expresion", Toast.LENGTH_LONG).show();
+                    }
+
+                }
+            }.execute();
+        }
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -132,9 +173,9 @@ public class ResponderExpresionActivity extends AppCompatActivity {
         switch (requestCode) {
             case READ_REQUEST_CODE:
                 Uri uri = data.getData();
-                fileName=Metadatos(uri);
+                nombre=Metadatos(uri);
                 path=data.getData().getPath();
-                uploadFile(fileName,uri,path);
+                uploadFile(nombre,uri,path);
                 break;
             case AUDIO_REQUEST_CODE:
                 break;
@@ -177,9 +218,9 @@ public class ResponderExpresionActivity extends AppCompatActivity {
             {
                 try{
                     InputStream inputStream=getContentResolver().openInputStream(uri);
-                    resultado=rest.postFile(String.format("uploadFile?login=%s",login),inputStream,fileName);
+                    resultado=rest.postFile(String.format("uploadFile"),inputStream,fileName);
                     //if(resultado==200){
-                    final String esaera=((EditText)findViewById(R.id.expresionEusk)).getText().toString();
+                   /* final String esaera=((EditText)findViewById(R.id.expresionEusk)).getText().toString();
                     JSONObject json=new JSONObject();
                     json.put("login",login);
                     json.put("audioFitxIZena",fileName);
@@ -191,7 +232,7 @@ public class ResponderExpresionActivity extends AppCompatActivity {
                     respuesta=rest.postJSON(json,String.format("responseEsaldia"));
                     Expresion exp=new Expresion();
                     exp.setRespuesta(respuesta);
-                    return exp;
+                    return exp;*/
 
                     //}
                 } catch (IOException e) {
@@ -203,14 +244,14 @@ public class ResponderExpresionActivity extends AppCompatActivity {
             @Override
             protected void onFinish(Expresion result) {
 
-                // Toast.makeText(getApplicationContext(),"resultado:"+resultado,Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"resultado:"+resultado,Toast.LENGTH_LONG).show();
 
-                if(result.getRespuesta().matches("ESALDIA OSATUTA")){
+               /* if(result.getRespuesta().matches("ESALDIA OSATUTA")){
                     Toast.makeText(getApplicationContext(),"Expresión completada",Toast.LENGTH_LONG).show();
                 }
                 else{
                     Toast.makeText(getApplicationContext(),"Error al completar la expresion",Toast.LENGTH_LONG).show();
-                }
+                }*/
 
             }
         }.execute();

@@ -85,7 +85,7 @@ public class RegistroActivity extends AppCompatActivity {
                 @Override
                 protected void onFinish(User result){
 
-                    String registro=String.format("Bienvenido a Appetc. Recuerda el nuevo login que se te ha asignado, es importante. Tu login es: %s",result);
+                    String registro=String.format("Bienvenido a Appetc. Tu login es: %s",result);
                     Toast.makeText(getApplicationContext(), registro,Toast.LENGTH_LONG).show();
                     Intent intent=new Intent(getApplicationContext(),SesionActivity.class);
                     startActivity(intent);
