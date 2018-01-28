@@ -310,7 +310,7 @@ public class ExpresionesActivity extends AppCompatActivity {
     public void reproducir2(View view, int id){
         // Toast.makeText(this,"id:"+id,Toast.LENGTH_SHORT).show();
         int num=expresion.getEsaldia().get(id).getIdEsaldiak();
-        producto = "http://u017633.ehu.eus:28080/static/Appetc_Rest/esaera"+num+".mp4";
+        producto = "http://u017633.ehu.eus:28080/static/Appetc_Rest/audio/esaera"+num+".mp4";
         showAudio(producto);
     }
     public void showAudio(String producto){

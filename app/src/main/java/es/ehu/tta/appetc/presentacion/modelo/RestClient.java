@@ -90,6 +90,7 @@ public class RestClient {
         String boundary=Long.toString(System.currentTimeMillis());
         String newLine="\r\n";
         String prefix="--";
+        String fileType="audio";
         HttpURLConnection conn=null;
 
         try{
@@ -99,7 +100,14 @@ public class RestClient {
             conn.setDoOutput(true);
             DataOutputStream out=new DataOutputStream(conn.getOutputStream());
             out.writeBytes(prefix + boundary + newLine);
+            out.writeBytes("Content-Disposition: form-data; name=\"filetype\"");
+            out.writeBytes(newLine);
+            out.writeBytes(newLine);
+            out.writeBytes(fileType);
+            out.writeBytes(newLine);
+            out.writeBytes(prefix + boundary + newLine);
             out.writeBytes("Content-Disposition: form-data;name=\"file\";filename=\""+fileName+"\""+newLine);
+            out.writeBytes("Content-Type:multipart/form-data"+newLine);
             out.writeBytes(newLine);
             byte[] data=new byte[1024*1024];
             int len;

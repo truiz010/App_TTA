@@ -123,7 +123,7 @@ public class EstadoExpresionesActivity extends AppCompatActivity {
 
         if(expresion.getEsaldia().get(id).getAudioFitxIzena().contains("esaera")){
             int num=expresion.getEsaldia().get(id).getIdEsaldiak();
-            String producto = "http://u017633.ehu.eus:28080/static/Appetc_Rest/esaera"+num+".3gpp";
+            String producto = "http://u017633.ehu.eus:28080/static/Appetc_Rest/audio/esaera"+num+".mp4";
             //String producto="http://u017633.ehu.eus:28080/static/ServidorTta/AndroidManifest.mp4";
             showAudio(producto);
         }

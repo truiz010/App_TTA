@@ -30,6 +30,11 @@ public class ExpresionesVaciasActivity extends AppCompatActivity {
     //String expresion="¿Cuanto cuesta eso?";
     String login;
     private RestClient rest=new RestClient("http://u017633.ehu.eus:28080/Appetc_Rest/rest/Appetc");
+    //public final static String EXTRA_ESAERACAST = "esaeraCast";
+    public final static String EXTRA_ERABILTZAILEMOTA = "erabiltzaileMota";
+    public final static String EXTRA_IDESALDIAK = "idEsaldiak";
+    Expresion expresion;
+   // static int numBotones;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,32 +91,17 @@ public class ExpresionesVaciasActivity extends AppCompatActivity {
                     boton.setGravity(Gravity.CENTER);
                     ll.addView(boton);
                 }
-
-
-              /*  for(int i=0; i<result.getEsaldia().size();i++){
-                    TableLayout tl =findViewById(R.id.botonExpresiones);
-
-                    TableRow tr = new TableRow(getApplicationContext());
-                    tr.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.FILL_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
-
-                    TextView gaztelaniaz = new TextView(getApplicationContext());
-                    gaztelaniaz.setText(result.getEsaldia().get(i).getEsaldiaCast());
-                    gaztelaniaz.setGravity(Gravity.CENTER);
-                    gaztelaniaz.setTextColor(Color.BLACK);
-                    gaztelaniaz.setTextSize(10);
-
-                    tr.addView(gaztelaniaz);
-
-                    tl.addView(tr, new TableLayout.LayoutParams(TableLayout.LayoutParams.FILL_PARENT, TableLayout.LayoutParams.WRAP_CONTENT));
-
-                }*/
             }
         }.execute();
 
     }
 
-    public void responderExpresion(View view){
+    public void responderExpresion(View view, int id){
         Intent intent=new Intent(this,ResponderExpresionActivity.class);
+        intent.putExtra(ExpresionesVaciasActivity.EXTRA_ERABILTZAILEMOTA,expresion.getEsaldia().get(id).getErabiltzaileMota());
+        //intent.putExtra(ExpresionesVaciasActivity.EXTRA_ESAERACAST,expresion.getEsaldia().get(id).getEsaldiaCast());
+        int ide=expresion.getEsaldia().get(id).getIdEsaldiak();
+        intent.putExtra(ExpresionesVaciasActivity.EXTRA_IDESALDIAK,Integer.toString(ide));
         intent.putExtra(SesionActivity.EXTRA_LOGIN,login);
         startActivity(intent);
     }

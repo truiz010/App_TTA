@@ -15,6 +15,15 @@
         android:textColor="@android:color/black"
         android:textSize="20dp"/>
 
+    <!-- <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="15dp"
+         android:text="Graba y sube el audio de la expresion a responder en euskera"
+         android:textColor="@android:color/black"
+         android:gravity="center"
+         android:textSize="20dp"/>-->
+
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +31,7 @@
 
 
         <TextView
-            android:text="ESAERA EUSKARAZ"
+            android:text="ESAERA "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -32,23 +41,56 @@
             android:layout_height="wrap_content"
             android:hint="Introduce la expresion en euskera"/>
 
-    </GridLayout>
+    </GridLayout>-->
 
-    <Button
+    <!--<Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="START AUDIO RECORD"
         android:layout_marginTop="30dp"
-        android:onClick="AudioRecord"/>
+        android:onClick="AudioRecord"/>-->
 
+    <Button
+        android:id="@+id/grabar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="100dp"
+        android:gravity="center"
+        android:onClick="grabar"
+        android:text="GRABAR AUDIO" />
 
+    <Button
+        android:id="@+id/detener"
+        android:layout_width="200dp"
+        android:layout_marginLeft="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="detener"
+        android:text="DETENER AUDIO" />
+
+    <Button
+        android:id="@+id/reproducir"
+        android:layout_width="200dp"
+        android:layout_marginLeft="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="reproducir"
+        android:text="REPRODUCIR AUDIO" />
 
     <Button
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="RESPONDER A UNA EXPRESION"
-        android:onClick="completarExpresion"/>
+        android:onClick="subirAudio"
+        android:text="SUBIR AUDIO" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="completarExpresion"
+        android:text="RESPONDER EXPRESION" />
 
 </LinearLayout>
