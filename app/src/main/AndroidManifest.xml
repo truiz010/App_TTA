@@ -9,37 +9,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".presentacion.presentacion.RegistroActivity" android:screenOrientation="portrait" />
-        <activity android:name=".presentacion.presentacion.SesionActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.MenuPrincipalActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.MenuActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.NuevaExpresionActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.ExpresionesVaciasActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.ResponderExpresionActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.MenuPalabrasActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.MainActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.ExpresionesActivity" android:screenOrientation="portrait" />
-        <activity android:name=".presentacion.presentacion.EstadoExpresionesActivity" android:screenOrientation="portrait" />
-        <activity android:name=".presentacion.presentacion.PalabrasActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.CarniceriaActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.PescaderiaActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.VerduleriaActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.TodosProductosActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.AhorcadoCarniceriaActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.AhorcadoPescaderiaActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.AhorcadoVerduleriaActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.ParejasCarniceriaActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.ParejasPescaderiaActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.ParejasVerduleriaActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.PalabraCorrectaCarniceriaActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.PalabraCorrectaPescaderiaActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.PalabraCorrectaVerduleriaActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.OcaCarniceriaActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.OcaPescaderiaActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.OcaVerduleriaActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.DiccionarioCarniceriaActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.DiccionarioPescaderiaActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".presentacion.presentacion.DiccionarioVerduleriaActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".presentacion.presentacion.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".presentacion.presentacion.RegistroActivity" android:screenOrientation="portrait" android:label="REGISTRARSE"/>
+        <activity android:name=".presentacion.presentacion.SesionActivity" android:screenOrientation="portrait" android:label="INICIAR SESION"/>
+        <activity android:name=".presentacion.presentacion.MenuPrincipalActivity" android:screenOrientation="portrait" android:label="MENU PRINCIPAL"/>
+        <activity android:name=".presentacion.presentacion.MenuActivity" android:screenOrientation="portrait" android:label="MENU"/>
+        <activity android:name=".presentacion.presentacion.NuevaExpresionActivity" android:screenOrientation="portrait" android:label="PREGUNTAR NUEVA EXPRESION"/>
+        <activity android:name=".presentacion.presentacion.ExpresionesVaciasActivity" android:screenOrientation="portrait" android:label="EXPRESIONES SIN RESPUESTA"/>
+        <activity android:name=".presentacion.presentacion.ResponderExpresionActivity" android:screenOrientation="portrait" android:label="RESPONDER A UNA EXPRESION"/>
+        <activity android:name=".presentacion.presentacion.ExpresionesActivity" android:screenOrientation="portrait" android:label="EXPRESIONES"/>
+        <activity android:name=".presentacion.presentacion.EstadoExpresionesActivity" android:screenOrientation="portrait" android:label="ESTADO DE MIS EXPRESIONES"/>
+        <activity android:name=".presentacion.presentacion.PalabrasActivity" android:screenOrientation="portrait" android:label="PALABRAS"/>
+        <activity android:name=".presentacion.presentacion.CarniceriaActivity" android:screenOrientation="portrait" android:label="CARNICERA"/>
+        <activity android:name=".presentacion.presentacion.PescaderiaActivity" android:screenOrientation="portrait" android:label="PESCADERIA"/>
+        <activity android:name=".presentacion.presentacion.VerduleriaActivity" android:screenOrientation="portrait" android:label="FRUTAS Y VERDURAS"/>
+        <activity android:name=".presentacion.presentacion.TodosProductosActivity" android:screenOrientation="portrait" android:label="TODOS LOS PRODUCTOS"/>
+        <activity android:name=".presentacion.presentacion.AhorcadoCarniceriaActivity" android:screenOrientation="portrait" android:label="AHORCADO"/>
+        <activity android:name=".presentacion.presentacion.AhorcadoPescaderiaActivity" android:screenOrientation="portrait" android:label="AHORCADO"/>
+        <activity android:name=".presentacion.presentacion.AhorcadoVerduleriaActivity" android:screenOrientation="portrait" android:label="AHORCADO"/>
+        <activity android:name=".presentacion.presentacion.ParejasCarniceriaActivity" android:screenOrientation="portrait" android:label="UNIR LAS PAREJAS"/>
+        <activity android:name=".presentacion.presentacion.ParejasPescaderiaActivity" android:screenOrientation="portrait" android:label="UNIR LAS PAREJAS"/>
+        <activity android:name=".presentacion.presentacion.ParejasVerduleriaActivity" android:screenOrientation="portrait" android:label="UNIR LAS PAREJAS"/>
+        <activity android:name=".presentacion.presentacion.PalabraCorrectaCarniceriaActivity" android:screenOrientation="portrait" android:label="PALABRA CORRECTA"/>
+        <activity android:name=".presentacion.presentacion.PalabraCorrectaPescaderiaActivity" android:screenOrientation="portrait" android:label="PALABRA CORRECTA"/>
+        <activity android:name=".presentacion.presentacion.PalabraCorrectaVerduleriaActivity" android:screenOrientation="portrait" android:label="PALABRA CORRECTA"/>
+        <activity android:name=".presentacion.presentacion.OcaCarniceriaActivity" android:screenOrientation="portrait"  android:label="JUEGO DE LA OCA"/>
+        <activity android:name=".presentacion.presentacion.OcaPescaderiaActivity" android:screenOrientation="portrait"  android:label="JUEGO DE LA OCA"/>
+        <activity android:name=".presentacion.presentacion.OcaVerduleriaActivity" android:screenOrientation="portrait"  android:label="JUEGO DE LA OCA"/>
+        <activity android:name=".presentacion.presentacion.DiccionarioCarniceriaActivity" android:screenOrientation="portrait" android:label="DICCIONARIO"/>
+        <activity android:name=".presentacion.presentacion.DiccionarioPescaderiaActivity" android:screenOrientation="portrait" android:label="DICCIONARIO"/>
+        <activity android:name=".presentacion.presentacion.DiccionarioVerduleriaActivity" android:screenOrientation="portrait" android:label="DICCIONARIO"></activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
