@@ -49,6 +49,7 @@ public class CarniceriaActivity extends AppCompatActivity {
 
     public void diccionarioCarniceria(View view){
         Intent intent=new Intent(this,DiccionarioCarniceriaActivity.class);
+        intent.putExtra(SesionActivity.EXTRA_LOGIN,login);
         startActivity(intent);
     }
 

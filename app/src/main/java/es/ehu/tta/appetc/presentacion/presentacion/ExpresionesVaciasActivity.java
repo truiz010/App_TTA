@@ -34,7 +34,9 @@ public class ExpresionesVaciasActivity extends AppCompatActivity {
     public final static String EXTRA_ERABILTZAILEMOTA = "erabiltzaileMota";
     public final static String EXTRA_IDESALDIAK = "idEsaldiak";
     Expresion expresion;
-   // static int numBotones;
+    // static int numBotones;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,20 +45,18 @@ public class ExpresionesVaciasActivity extends AppCompatActivity {
 
         Intent intent=getIntent();
         login=intent.getStringExtra(SesionActivity.EXTRA_LOGIN);
-
         TextView textLogin=(TextView)findViewById(R.id.menu_login);
         textLogin.setText("Login: "+intent.getStringExtra(SesionActivity.EXTRA_LOGIN));
 
         //TextView textExpresion=(TextView)findViewById(R.id.botonExpresion);
-       // textExpresion.setText(expresion);
+        //textExpresion.setText(expresion);
 
         new ProgressTask<Expresion>(this){
-
             @RequiresApi(api = Build.VERSION_CODES.KITKAT)
             @Override
             protected Expresion work()throws IOException {
                 try{
-                    Expresion expresion=new Expresion();
+                    expresion=new Expresion();
                     JSONObject json=rest.getJSON(String.format("requestForoa?login=%s",login));
 
                     expresion.setLogin(json.getString("login"));
@@ -82,21 +82,29 @@ public class ExpresionesVaciasActivity extends AppCompatActivity {
 
             @Override
             protected void onFinish(Expresion result){
-                Toast.makeText(getApplicationContext(),"Pagina de expresiones",Toast.LENGTH_SHORT).show();
+                //  Toast.makeText(getApplicationContext(),"Pagina de expresiones",Toast.LENGTH_SHORT).show();
 
                 for(int i=0; i<result.getEsaldia().size();i++){
                     LinearLayout ll=findViewById(R.id.llBotonera);
-                    Button boton=new Button(getApplicationContext());
+                    final Button boton=new Button(getApplicationContext());
                     boton.setText(result.getEsaldia().get(i).getEsaldiaCast());
                     boton.setGravity(Gravity.CENTER);
+                    boton.setId(i);
+                    boton.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            int id=boton.getId();
+                            responderExpresion(view,id);
+                        }
+                    });
                     ll.addView(boton);
                 }
             }
         }.execute();
-
     }
 
     public void responderExpresion(View view, int id){
+
         Intent intent=new Intent(this,ResponderExpresionActivity.class);
         intent.putExtra(ExpresionesVaciasActivity.EXTRA_ERABILTZAILEMOTA,expresion.getEsaldia().get(id).getErabiltzaileMota());
         //intent.putExtra(ExpresionesVaciasActivity.EXTRA_ESAERACAST,expresion.getEsaldia().get(id).getEsaldiaCast());

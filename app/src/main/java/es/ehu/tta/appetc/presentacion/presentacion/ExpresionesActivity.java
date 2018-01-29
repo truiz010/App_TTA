@@ -182,11 +182,15 @@ public class ExpresionesActivity extends AppCompatActivity {
     public void nuevaExpresion(View view){
         Intent intent=new Intent(this,NuevaExpresionActivity.class);
         intent.putExtra(SesionActivity.EXTRA_LOGIN,login);
+        //intent.putExtra(MenuPrincipalActivity.EXTRA_TIPO,tipo);
+        startActivity(intent);
     }
 
     public void responderExpresion(View view){
         Intent intent=new Intent(this,ExpresionesVaciasActivity.class);
         intent.putExtra(SesionActivity.EXTRA_LOGIN,login);
+        //intent.putExtra(MenuPrincipalActivity.EXTRA_TIPO,tipo);
+        startActivity(intent);
     }
 
     public void reproducir(View view, int id) {
